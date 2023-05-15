@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        #   = id
+        .   = class
+        :   = pseudoclass
+        ::  = pseudo elemento
+        >   = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(47, 255, 75, 0.363);
+        }
+        a {
+            color: rgb(0, 0, 77);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: brown;
+        }
+        a:hover {
+            color: crimson;
+            text-decoration: underline;
+        }
+        a:active {
+            color: aqua;
+        }
+        .especial {
+            background-color: rgba(139, 0, 139, 0.329);
+        }
+        .especial::before {
+            content: '⇒';
+        }
+        .especial::after {
+            content: '⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus Links Personalizados</h1>
+    <ul>
+        <li><a class="especial" href="https://github.com/seshIgor" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCpUJ012X705WQ6dW8946VeA" target="_blank">Canal no Youtube</a></li>
+        <li><a class="especial" href="https://www.instagram.com/lil_iguh/" target="_blank">Instagram</a></li>
+    </ul>
+</body>
+</html>

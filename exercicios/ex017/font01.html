@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando fontes em css</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas:
+            cm (centímetros), mm(milímetros), in(polegadas), px(pixel), pt(pontos), pc(paicas);
+
+            Medias relativas:
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            W3C recomenda o uso de px ou em, para tamanho de fontes.
+            */
+            font-size: 1.1em ;
+            /*Ligther Normal Bold Bolder*/
+        }
+        h1{
+            /*Shorthand font: (Font-style -> font-weight -> font-size -> font-family)
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'work sans', sans-serif;
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, atque dignissimos ipsam error odit officia deleniti reprehenderit aperiam est, quibusdam iure, quasi laborum alias iusto veritatis ut omnis. A, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, rem! Necessitatibus libero neque dolores soluta voluptates atque temporibus iure dolore ut non, perferendis animi similique nostrum architecto aut accusamus dignissimos.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, odio cumque id eius alias doloribus quae unde eos ducimus, nulla laudantium amet quidem labore illum. Culpa impedit nesciunt repellat laborum.</p>
+</body>
+</html>
