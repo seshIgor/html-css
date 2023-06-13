@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilização de iframe</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+            width: 95vw;
+            height: 350px;
+        }
+        ul {
+            list-style: circle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha uma opção</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quis id maxime maiores laudantium vel, commodi impedit quisquam. Quas exercitationem iste accusantium laboriosam, fugit quasi saepe quis id cumque modi.</p>
+    <ul>
+        <li><a href="./paginas-extras/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="./paginas-extras/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="./paginas-extras/pag03.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, est tenetur, labore alias reprehenderit provident, assumenda id autem excepturi quia fugiat maiores itaque unde iusto qui. Vitae, dicta quam.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ipsam accusantium facere illum tempora, unde earum nostrum in reprehenderit alias a natus libero minima illo molestiae eligendi, ex sint voluptates?
+    </p>
+
+    <iframe id="tela" srcdoc="<h1>Escolha uma opção acima</h1><img src='./imagens/balota-full.png'>" name="frame">
+        <p>Seu navegador não é compatível!</p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam qui earum non aliquid omnis modi asperiores labore iste, dolores consequatur praesentium, quam aut voluptatibus harum porro quos quibusdam reprehenderit?
+    </p>
+</body>
+</html>
